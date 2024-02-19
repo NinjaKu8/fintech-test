@@ -39,6 +39,12 @@ app.use((err, req, res, next) => {
   res.status(500).send('Something broke!')
 })
 
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack)
+  res.status(500).send('Something broke!')
+})
+
 // Serve static files
 // app.use(express.static(''));
 

@@ -1,30 +1,62 @@
-# React + TypeScript + Vite
+# Financial-Instruments-Display Frontend Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+The Financial-Instruments-Display Frontend Project is part of the Fintech Test suite, designed to provide a seamless user experience for managing financial transactions, monitoring investments, and accessing financial data in real-time.
+It aims to deliver a responsive, intuitive interface that complements the powerful backend services of the Financial-Instruments-Display Frontend Project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technical Specifications and Architecture
 
-## Expanding the ESLint configuration
+- **Framework:** Main framework is React, supplemented by Vite for efficient development and bundling.
+- **Language:** TypeScript for static typing, enhancing code quality and developer experience.
+- **Styling:** CSS modules, styled-components, and UI framework - MUI.
+- **Charts:** ApexCharts (Bar, CandleStick, RaialBar, Radar).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Architecture Overview
 
-- Configure the top-level `parserOptions` property like this:
+The application's architecture focuses on modular and component-based design principles, facilitating maintainability and scalability. Key aspects include:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- **Component Structure:** Organized in `src/components`, each component is designed for reusability and encapsulation.
+- **types of Financial Instruments:** Defined the types of Financial Instruments in `src/types`.
+
+## Setup Instructions
+
+### Prerequisites
+
+- Node.js (version 20.x.x or higher)
+- npm (version 10.x.x or higher)
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/NinjaKu8/fintech-instruments-display.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd fintech-instruments-display/client
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+   or if using yarn:
+   ```bash
+   yarn install
+   ```
+
+### Running the Application
+
+To start the development server, run:
+
+```bash
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+or with yarn:
+
+```bash
+yarn dev
+```
+
+Access the application at [http://localhost:3000](http://localhost:3000) or the port specified by your development server.
