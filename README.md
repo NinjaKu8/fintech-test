@@ -37,6 +37,10 @@ This project is fully dockerized, allowing for easy setup and deployment. Docker
    ```
    docker compose up
    ```
+4. Load financial instruments data (JSON files) into the Postgres DB:
+   ```
+   http://localhost:3000/importData
+   ```
 
 This command will start both frontend and backend services in containers, making them accessible via their respective ports as defined in the `docker-compose.yml` file.
 
