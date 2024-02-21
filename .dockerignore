@@ -26,6 +26,7 @@
 **/node_modules
 **/npm-debug.log
 **/obj
+**/package-lock.json
 **/secrets.dev.yaml
 **/values.dev.yaml
 **/build
