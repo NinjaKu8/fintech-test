@@ -45,7 +45,7 @@ This project is fully dockerized, allowing for easy setup and deployment. Docker
 This command will start both frontend(`http://localhost:1234/`) and backend(`http://localhost:3000/`) services in containers, making them accessible via their respective ports as defined in the `docker-compose.yml` file.
 
 #### Visit the website
-Visit `http://localhost:3000/`.
+Visit [http://localhost:1234/](http://localhost:1234/).
 
 ## Project Structure
 
